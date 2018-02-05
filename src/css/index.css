@@ -29,10 +29,10 @@ header > h1{
     width: 600px;
 }
 .col-left {
-    padding: 25px 0px 0px 0px;
+    padding: 25px 20px 0px 10px;
 }
 .col-right{
-    padding: 25px 0px 0px 0px;
+    padding: 25px 20px 0px 10px;
     margin-left: 50px;
 }
 input{
