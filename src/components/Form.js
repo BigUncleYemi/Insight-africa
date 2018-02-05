@@ -21,7 +21,7 @@ class Form extends Component {
       <div>
         <fieldset className="field">
             <legend>Sign up</legend>
-                <form ref={(input) => this.newForm = input} className="form" name="myForm" onSubmit={(e) => this.creatForm(e)}>>
+                <form ref={(input) => this.newForm = input} className="form" name="myForm" onSubmit={(e) => this.creatForm(e)}>
                     <div className="row">
                         <div className="col-left">
                             <label htmlFor="lastname">First name: </label>
