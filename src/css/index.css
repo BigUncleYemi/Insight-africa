@@ -30,10 +30,10 @@ header > h1{
 }
 .col-left {
     padding: 25px 0px 0px 0px;
-    margin-right: 50px;
 }
 .col-right{
     padding: 25px 0px 0px 0px;
+    margin-left: 50px;
 }
 input{
     border-color:black;
@@ -65,4 +65,8 @@ p{
         display: block;
         min-width: 300px;
     }
+  .col-right{
+      margin-left: 0px;
+      }
+      
 }
