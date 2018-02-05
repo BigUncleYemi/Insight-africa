@@ -18,10 +18,10 @@ header > h1{
 .form{
     display: inline-block;
     display: -ms-inline-flex;
-    width: 100%;
+    width: auto; 
 }
 .row{
-    padding: 20px 100px 0px 100px;
+    padding: 20px 10px 0px 10px;
     display: block;
 }
 .row-form {
@@ -30,6 +30,7 @@ header > h1{
 }
 .col-left {
     padding: 25px 20px 0px 10px;
+    display : grid; 
 }
 .col-right{
     padding: 25px 20px 0px 10px;
@@ -63,10 +64,11 @@ p{
 @media screen and (max-width: 768px) {
     .row-form{
         display: block;
-        min-width: 300px;
+        width: 300px;
     }
   .col-right{
       margin-left: 0px;
+      display : grid; 
       }
       
 }
