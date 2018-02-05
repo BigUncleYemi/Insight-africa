@@ -30,13 +30,13 @@ class Form extends Component {
                                 </div>
                                 <div className="col-right">
                                     <label htmlFor="lastname">last name: </label>
-                                    <input ref={(input) => this.lname = input} type="text" required className="col-right" id="lName" placeholder="LastName" />
+                                    <input ref={(input) => this.lname = input} type="text" required className="col-left" id="lName" placeholder="LastName" />
                                 </div>
                        	 </div>
                        	 <div className="row-form">
                                 <div className="col-left">
                                     <label htmlFor="phone">Phone number: </label>
-                                    <input ref={(input) => this.phoneNumber = input} type="tel" className="col-right" id="phone" placeholder="phone number" pattern="[0-9]{11}" />
+                                    <input ref={(input) => this.phoneNumber = input} type="tel" className="col-left" id="phone" placeholder="phone number" pattern="[0-9]{11}" />
                                 </div>
                                 <div className="col-right">
                                     <label htmlFor="email">Email: </label>
@@ -50,7 +50,7 @@ class Form extends Component {
                                 </div>
                                 <div className="col-right">
                                     <label htmlFor="confirmPassword">Confirm Password: </label>
-                                    <input ref={(input) => this.cPassword = input} type="password" required className="col-right" id="cpassword" placeholder="confirm password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" />
+                                    <input ref={(input) => this.cPassword = input} type="password" required className="col-left" id="cpassword" placeholder="confirm password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" />
                                 </div>
                             </div>
                         </div>
