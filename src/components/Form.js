@@ -12,6 +12,24 @@ class Form extends Component {
             password: this.password.value,
             cPassword: this.cPassword.value
         };
+        var form  = document.getElementsByTagName('form')[0];
+        var error = document.querySelector('.error');
+        form.addEventListener("submit", function (event) {
+        if (!form.validity.valid) {
+            error.innerHTML = "invaild input";
+            error.className = "error active";
+            // And we prevent the form from being sent by canceling the event
+            event.preventDefault();
+          }
+        }, false);
+        form.addEventListener("submit", function (event) {
+        if (form.validity.valid) {
+            error.innerHTML = "form submitted sucessfully";
+            error.className = "error active";
+            // And we prevent the form from being sent by canceling the event
+            event.preventDefault();
+          }
+        }, true);
         this.props.addForm(form);
         this.newForm.reset();
     }
@@ -21,6 +39,7 @@ class Form extends Component {
             <div>
                 <div className="field">
                     <h2>Sign up</h2>
+                    <span class="error" aria-live="polite"></span>
                     <form ref={(input) => this.newForm = input} className="form" name="myForm" onSubmit={(e) => this.creatForm(e)}>
                         <div className="row">
                             <div className="row-form">
@@ -45,7 +64,7 @@ class Form extends Component {
 							 </div>   
 							 <div className="row-form">                  
                                 <div className="col-left">
-                                    <label htmlFor="password">Password: </label>
+                                    <label htmlFor="password">Password: <br> most have at least one upperclass letter and a number </label>
                                     <input ref={(input) => this.password = input} type="password" required className="col-left" id="password" placeholder="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" />
                                 </div>
                             </div>
