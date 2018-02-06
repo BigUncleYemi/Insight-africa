@@ -70,5 +70,8 @@ p{
       margin-left: 0px;
       display : grid; 
       }
+   .field{
+       margin: 10px;
+       }
       
 }
