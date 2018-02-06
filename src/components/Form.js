@@ -19,8 +19,8 @@ class Form extends Component {
     render() {
         return (
             <div>
-                <fieldset className="field">
-                    <legend>Sign up</legend>
+                <div className="field">
+                    <h2>Sign up</h2>
                     <form ref={(input) => this.newForm = input} className="form" name="myForm" onSubmit={(e) => this.creatForm(e)}>
                         <div className="row">
                             <div className="row-form">
@@ -48,17 +48,13 @@ class Form extends Component {
                                     <label htmlFor="password">Password: </label>
                                     <input ref={(input) => this.password = input} type="password" required className="col-left" id="password" placeholder="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" />
                                 </div>
-                                <div className="col-right">
-                                    <label htmlFor="confirmPassword">Confirm Password: </label>
-                                    <input ref={(input) => this.cPassword = input} type="password" required className="col-left" id="cpassword" placeholder="confirm password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" />
-                                </div>
                             </div>
                         </div>
                         <center>
                             <input type="submit" defaultValue="submit" id="button" />
                         </center>
                     </form>
-                </fieldset>
+                </div>
             </div>
         );
     }
