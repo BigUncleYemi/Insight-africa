@@ -64,7 +64,7 @@ class Form extends Component {
 							 </div>   
 							 <div className="row-form">                  
                                 <div className="col-left">
-                                    <label htmlFor="password">Password: <br> most have at least one upperclass letter and a number</br> </label>
+                                    <label htmlFor="password">Password:  must have at least one upperclass letter and a number </label>
                                     <input ref={(input) => this.password = input} type="password" required className="col-left" id="password" placeholder="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" />
                                 </div>
                             </div>
